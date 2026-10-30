@@ -37,7 +37,7 @@ The server needs **two** ports, and they are not derived from one another.
 
 | Variable | Default | Visible / Editable | What it does |
 |---|---|---|---|
-| `M2O_DOWNLOAD_URL` | [QGS mirror](https://source.qgshosting.com/downloads/m2o/M2O-1.6.1.zip) | no / no | Direct link to the build archive (`M2O-<version>.zip`, or a tarball with the same contents). The installer downloads and unpacks it. Point it elsewhere to pin another version; left empty, the layout and `server.json` are still prepared and the binaries can be uploaded by hand. **Admin only** — it decides what code the server runs. |
+| `M2O_DOWNLOAD_URL` | [QGS mirror](https://source.qgshosting.com/downloads/m2o/latest.zip) | no / no | Direct link to the build archive (`M2O-<version>.zip`, or a tarball with the same contents). The installer downloads and unpacks it. Point it elsewhere to pin another version; left empty, the layout and `server.json` are still prepared and the binaries can be uploaded by hand. **Admin only** — it decides what code the server runs. |
 | `API_PORT` | `27016` | yes / no | TCP port for the HTTP info endpoint. Must match the server's second allocation. Not editable by the client because it is tied to an allocation. |
 | `MAX_PLAYERS` | `32` | yes / yes | Connection cap, also what the server reports to the browser. |
 | `SEASON` | `summer` | yes / yes | World season — `summer` or `winter`. Validated at boot: a misspelled value stops the server with an error naming the key. |
