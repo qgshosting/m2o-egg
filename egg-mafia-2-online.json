@@ -33,7 +33,7 @@
             "name": "Build archive URL",
             "description": "Direct link to the build archive (M2O-<version>.zip, or a tarball holding the same files). Defaults to the QGS mirror; point it elsewhere to pin another version. Left empty, the binaries have to be uploaded by hand. Admin only.",
             "env_variable": "M2O_DOWNLOAD_URL",
-            "default_value": "https://source.qgshosting.com/downloads/m2o/M2O-1.7.1.zip",
+            "default_value": "https://source.qgshosting.com/downloads/m2o/latest.zip",
             "user_viewable": false,
             "user_editable": false,
             "rules": "nullable|string|max:1024",
